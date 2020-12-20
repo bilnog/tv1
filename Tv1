@@ -1,0 +1,152 @@
+--By Rufus14 (One of the my best scripts)
+sound = Instance.new("Sound", game.Players.LocalPlayer.Character.Head)
+sound.SoundId = "http://roblox.com/asset?id=280667448"
+Instance.new("ForceField", game.Players.LocalPlayer.Character)
+mouse = game.Players.LocalPlayer:GetMouse()
+function key(key)
+	key = key:lower()
+	if key == "q" then
+		for i = 1,5 do
+		wait(0.01)
+		plr.Torso.Neck.C1 = plr.Torso.Neck.C1 * CFrame.Angles(0,0,0.35)
+		plr.Torso["Right Shoulder"].C1 = plr.Torso["Right Shoulder"].C1 * CFrame.Angles(0.25,0,0)
+		plr.HumanoidRootPart.RootJoint.C1 = plr.HumanoidRootPart.RootJoint.C1 * CFrame.Angles(0,0,-0.35)
+		end
+		sound:Play()
+		local hit = Instance.new("Explosion", plr["Right Arm"])
+		hit.Position = plr["Right Arm"].Position
+		hit.Visible = false
+		hit.BlastPressure = 100000
+		hit.BlastRadius = 2.5
+		wait(0.05)
+		for i = 1,5 do
+		wait(0.01)
+		plr.Torso.Neck.C1 = plr.Torso.Neck.C1 * CFrame.Angles(0,0,-0.35)
+		plr.Torso["Right Shoulder"].C1 = plr.Torso["Right Shoulder"].C1 * CFrame.Angles(-0.25,0,0)
+		plr.HumanoidRootPart.RootJoint.C1 = plr.HumanoidRootPart.RootJoint.C1 * CFrame.Angles(0,0,0.35)
+		end
+		hit:destroy()
+	end
+	if key == "e" then
+		for i = 1,5 do
+		wait(0.01)
+		plr.Torso["Right Hip"].C1 = plr.Torso["Right Hip"].C1 * CFrame.Angles(0,0,-0.3)
+        plr.HumanoidRootPart.RootJoint.C1 = plr.HumanoidRootPart.RootJoint.C1 * CFrame.Angles(0.05,0,0)
+        plr.Torso["Right Shoulder"].C1 = plr.Torso["Right Shoulder"].C1 * CFrame.Angles(0,0,0.06)
+        plr.Torso["Left Shoulder"].C1 = plr.Torso["Left Shoulder"].C1 * CFrame.Angles(0,0,0.06)
+        sound.PlaybackSpeed = 0.7
+		end
+		sound:Play()
+		local hit1 = Instance.new("Explosion", plr["Right Leg"])
+		hit1.Position = plr["Right Leg"].Position
+		hit1.Visible = false
+		hit1.BlastPressure = 200000
+		hit1.BlastRadius = 2
+		wait(0.1)
+		for i = 1,5 do
+		wait(0.01)
+		plr.Torso["Right Hip"].C1 = plr.Torso["Right Hip"].C1 * CFrame.Angles(0,0,0.3)
+        plr.HumanoidRootPart.RootJoint.C1 = plr.HumanoidRootPart.RootJoint.C1 * CFrame.Angles(-0.05,0,0)
+        plr.Torso["Right Shoulder"].C1 = plr.Torso["Right Shoulder"].C1 * CFrame.Angles(0,0,-0.06)
+        plr.Torso["Left Shoulder"].C1 = plr.Torso["Left Shoulder"].C1 * CFrame.Angles(0,0,-0.06)
+		end
+		sound.PlaybackSpeed = 1
+		hit1:destory()
+	end
+	if key == "r" then
+		for i = 1,5 do
+		wait(0.01)
+		plr.Torso.Neck.C1 = plr.Torso.Neck.C1 * CFrame.Angles(0,0,-0.35)
+		plr.Torso["Left Shoulder"].C1 = plr.Torso["Left Shoulder"].C1 * CFrame.Angles(0.25,0,0)
+		plr.HumanoidRootPart.RootJoint.C1 = plr.HumanoidRootPart.RootJoint.C1 * CFrame.Angles(0,0,0.35)
+		end
+		sound:Play()
+		local hit2 = Instance.new("Explosion", plr["Left Arm"])
+		hit2.Position = plr["Left Arm"].Position
+		hit2.Visible = false
+		hit2.BlastPressure = 100000
+		hit2.BlastRadius = 2.5
+		wait(0.05)
+		for i = 1,5 do
+		wait(0.01)
+		plr.Torso.Neck.C1 = plr.Torso.Neck.C1 * CFrame.Angles(0,0,0.35)
+		plr.Torso["Left Shoulder"].C1 = plr.Torso["Left Shoulder"].C1 * CFrame.Angles(-0.25,0,0)
+		plr.HumanoidRootPart.RootJoint.C1 = plr.HumanoidRootPart.RootJoint.C1 * CFrame.Angles(0,0,-0.35)
+		end
+		hit2:destroy()
+	end
+end
+mouse.KeyDown:connect(key)
+plr = game.Players.LocalPlayer.Character
+sound1 = Instance.new("Sound", plr.Head)
+sound1.SoundId = "http://www.roblox.com/asset/?id=360202811"
+sound1:Play()
+sound1.Looped = true
+sound1.Volume = 20
+plr.HumanoidRootPart.RootJoint.C1 = plr.HumanoidRootPart.RootJoint.C1 * CFrame.Angles(-0.05,0,0)
+plr.Torso["Right Shoulder"].C1 = plr.Torso["Right Shoulder"].C1 * CFrame.Angles(0.1,0.1,0.1)
+plr.Torso["Left Shoulder"].C1 = plr.Torso["Left Shoulder"].C1 * CFrame.Angles(0.1,0.1,0.1)
+plr.Torso["Right Hip"].C1 = plr.Torso["Right Hip"].C1 * CFrame.Angles(0,0,-0.15)
+plr.Torso["Left Hip"].C1 = plr.Torso["Left Hip"].C1 * CFrame.Angles(0,0,-0.15)
+while true do
+	wait(0.01)
+	for i = 1,2 do
+	wait(0.05)
+    plr = game.Players.LocalPlayer.Character
+   plr.Torso["Left Hip"].C1 = plr.Torso["Left Hip"].C1 * CFrame.Angles(0,0,-0.005)
+    plr.Torso["Right Hip"].C1 = plr.Torso["Right Hip"].C1 * CFrame.Angles(0,0,-0.005)
+    plr.Torso.Neck.C1 = plr.Torso.Neck.C1 * CFrame.Angles(-0.005,0,-0.005)
+	plr.Torso["Right Shoulder"].C1 = plr.Torso["Right Shoulder"].C1 * CFrame.new(0,0.01,0)
+    plr.Torso["Left Shoulder"].C1 = plr.Torso["Left Shoulder"].C1 * CFrame.new(0,0.01,0)
+	end
+	for i = 1,2 do
+	wait(0.05)
+    plr.Torso["Left Hip"].C1 = plr.Torso["Left Hip"].C1 * CFrame.Angles(0,0,-0.005)
+	plr.Torso["Right Hip"].C1 = plr.Torso["Right Hip"].C1 * CFrame.Angles(0,0,-0.005)
+	plr.Torso.Neck.C1 = plr.Torso.Neck.C1 * CFrame.Angles(-0.005,0,-0.005)
+    plr = game.Players.LocalPlayer.Character
+	plr.Torso["Right Shoulder"].C1 = plr.Torso["Right Shoulder"].C1 * CFrame.new(0,0.02,0)
+    plr.Torso["Left Shoulder"].C1 = plr.Torso["Left Shoulder"].C1 * CFrame.new(0,0.02,0)
+	end
+	for i = 1,3 do
+	plr.Torso.Neck.C1 = plr.Torso.Neck.C1 * CFrame.Angles(-0.005,0,-0.005)
+	wait(0.05)
+	plr.Torso["Left Hip"].C1 = plr.Torso["Left Hip"].C1 * CFrame.Angles(0,0,-0.005)
+	plr.Torso["Right Hip"].C1 = plr.Torso["Right Hip"].C1 * CFrame.Angles(0,0,-0.005)
+    plr = game.Players.LocalPlayer.Character
+	plr.Torso["Right Shoulder"].C1 = plr.Torso["Right Shoulder"].C1 * CFrame.new(0,0.025,0)
+    plr.Torso["Left Shoulder"].C1 = plr.Torso["Left Shoulder"].C1 * CFrame.new(0,0.025,0)
+	end
+	wait(1)
+-------------------------------------------------------------------------------------------------------
+    for i = 1,3 do
+	plr.Torso.Neck.C1 = plr.Torso.Neck.C1 * CFrame.Angles(0.005,0,0.005)
+	wait(0.05)
+	plr.Torso["Left Hip"].C1 = plr.Torso["Left Hip"].C1 * CFrame.Angles(0,0,0.005)
+	plr.Torso["Right Hip"].C1 = plr.Torso["Right Hip"].C1 * CFrame.Angles(0,0,0.005)
+    plr = game.Players.LocalPlayer.Character
+	plr.Torso["Right Shoulder"].C1 = plr.Torso["Right Shoulder"].C1 * CFrame.new(0,-0.025,0)
+    plr.Torso["Left Shoulder"].C1 = plr.Torso["Left Shoulder"].C1 * CFrame.new(0,-0.025,0)
+
+end
+for i = 1,2 do
+	plr.Torso["Right Hip"].C1 = plr.Torso["Right Hip"].C1 * CFrame.Angles(0,0,0.005)
+	plr.Torso.Neck.C1 = plr.Torso.Neck.C1 * CFrame.Angles(0.005,0,0.005)
+	wait(0.05)
+	plr.Torso["Left Hip"].C1 = plr.Torso["Left Hip"].C1 * CFrame.Angles(0,0,0.005)
+    plr = game.Players.LocalPlayer.Character
+	plr.Torso["Right Shoulder"].C1 = plr.Torso["Right Shoulder"].C1 * CFrame.new(0,-0.02,0)
+    plr.Torso["Left Shoulder"].C1 = plr.Torso["Left Shoulder"].C1 * CFrame.new(0,-0.02,0)
+
+end
+for i = 1,2 do
+	plr.Torso["Right Hip"].C1 = plr.Torso["Right Hip"].C1 * CFrame.Angles(0,0,0.005)
+	plr.Torso.Neck.C1 = plr.Torso.Neck.C1 * CFrame.Angles(0.005,0,0.005)
+	wait(0.05)
+	plr.Torso["Left Hip"].C1 = plr.Torso["Left Hip"].C1 * CFrame.Angles(0,0,0.005)
+    plr = game.Players.LocalPlayer.Character
+	plr.Torso["Right Shoulder"].C1 = plr.Torso["Right Shoulder"].C1 * CFrame.new(0,-0.01,0)
+    plr.Torso["Left Shoulder"].C1 = plr.Torso["Left Shoulder"].C1 * CFrame.new(0,-0.01,0)
+
+end
+end
